@@ -1,0 +1,7 @@
+FROM node:latest
+WORKDIR /home/sc56/work/
+
+RUN npm install
+
+CMD {"node"}
+
