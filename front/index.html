@@ -1,69 +1,75 @@
 <html>
-    
-    <head>
-        
-        <title>research's document</title>
-        
-        <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-        <link href="./style.css" rel="stylesheet">
+  <head>
+    <title>research's document</title>
 
-        <script>
+    <link
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <link href="./style.css" rel="stylesheet" />
 
-            async function myFunction() {
-                
-                let url = "http://localhost:5000/data";
-                let response = await fetch(url).then(response => response.text());
-                console.log(response);
-                
-                document.getElementById("generated").innerHTML = response;                
-            };
+    <script>
+      async function myFunction() {
+        let url = "http://localhost:5000/data";
+        let response = await fetch(url).then((response) => response.text());
+        console.log(response);
 
-        </script>
+        document.getElementById("generated").innerHTML = response;
+      }
+    </script>
+  </head>
 
-    </head>
-    
-    <body onload="myFunction()">
+  <body onload="myFunction()">
+    <!-- to-do: build one navigation bar -->
+    <nav class="navbar bg-light">
+      <h5 id="title">
+        super-resolution research note, and i will change something.
+      </h5>
+    </nav>
 
-        <!-- to-do: build one navigation bar -->
-        <nav class="navbar bg-light">
-            <h5 id="title">super-resolution research note</h5>
-        </nav>
-
-        <div id="container" class="container">
-
-            <div class="row">
-                
-                <div class="col-md-8">
-                    <div id="note" class=" border-1 border-secondary">
-                        <p>The value for number is:  <span id="generated"></span></p>
-                    </div> 
-                </div>
-                
-                <div id="comment" class="col-md-4">
-
-                    <form>
-                        <div id="form">
-                            
-                            <label for="text_area_1">Enter</label>
-                            
-                            <textarea id="text-area" class="form-control" style="font-size: 12px" id="text_area_1" rows="10"></textarea>
-                            
-                            <div class="buttons" style="text-align: center;">
-                                
-                                
-                                <!-- question: how to use button to add information on the screen ? -->
-                                <!-- step-1: add one listener to the button  -->
-                                <!-- step-2: define the rules of clicking. -->
-                                <button id="submit-button" type="button" class="btn btn-primary"><span style="font-size:11px;">Submit</span></button>
-                                <button class="btn btn-primary"><span style="font-size:11px;">Clear</span></button>
-                                
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
+    <div id="container" class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div id="note" class="border-1 border-secondary">
+            <p>The value for number is: <span id="generated"></span></p>
+          </div>
         </div>
 
-        <script src="./script.js"></script>
-    </body>
+        <div id="comment" class="col-md-4">
+          <form>
+            <div id="form">
+              <label for="text_area_1">Enter</label>
+
+              <textarea
+                id="text-area"
+                class="form-control"
+                style="font-size: 12px"
+                id="text_area_1"
+                rows="10"
+              ></textarea>
+
+              <div class="buttons" style="text-align: center">
+                <!-- question: how to use button to add information on the screen ? -->
+                <!-- step-1: add one listener to the button  -->
+                <!-- step-2: define the rules of clicking. -->
+                <button
+                  id="submit-button"
+                  type="button"
+                  class="btn btn-primary"
+                >
+                  <span style="font-size: 11px">Submit</span>
+                </button>
+                <button class="btn btn-primary">
+                  <span style="font-size: 11px">Clear</span>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
 </html>
