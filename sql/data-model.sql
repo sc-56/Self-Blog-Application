@@ -1,1 +1,0 @@
-CREATE DATABASE q_mgmt;
