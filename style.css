@@ -1,8 +1,11 @@
 /* set margin/padding to 0 as beginning. */
 * {
   margin:0;
-  padding:0
+  padding:0;
+  font-family: "Calibri";
 }
+
+
 
 #navigator {
   background-color: white;
@@ -12,24 +15,47 @@
 }
 
 #navigator ul {
-  width: 100%;
-  height: 100%;
-  display: block;
-  text-align: center;
-}
-
-#navigator li {
-  height: 100%;
-  display:inline-block;
-  color:blue;
-  text-align:center;
-}
-
-#navigator li span {
+  width: auto;
   height: auto;
   display: block;
+  text-align: center;
+  padding: 10px;
 }
 
-#tester {
-  color: red;
+#navigator ul li {
+
+  display:inline-block;
+  margin-right: 10%;
+  margin-left: 10%;
+
 }
+
+#navigator ul li a {
+
+  display: inline;
+
+  color:black;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+#container {
+  
+  width: 100%;
+  height: auto;
+
+}
+
+#displayer {
+
+  display:block;
+
+  width: 35%;
+  padding: 5%;
+  height: 500px;
+  margin: 3% 25% 0% 25%;
+
+  border-width: 0px 1px 0px 1px;
+  border-style: solid;
+}
+
