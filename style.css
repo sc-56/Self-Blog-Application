@@ -5,8 +5,6 @@
   font-family: "Calibri";
 }
 
-
-
 #navigator {
   background-color: white;
   width: 100%;
@@ -24,42 +22,49 @@
 }
 
 #navigator ul li {
-
   display:inline-block;
   margin-right: 5%;
   margin-left: 5%;
-
 }
 
 #navigator ul li a {
-
   display: inline;
-
   text-underline-offset: 7px;
   text-decoration-line: underline;
-
   color:black;
   font-size: 17px;
   font-weight: 500;
 }
 
 #container {
-  
   width: 100%;
   height: auto;
+}
 
+#bookmark {
+  display:inline-block;
+  width: 20%;
+  margin: 1% 0% 0% 2%;
+  /* background-color: lightblue; */
 }
 
 #displayer {
-
-  display:block;
-
-  width: 35%;
-  padding: 5%;
+  display:inline-block;
+  vertical-align:top;
+  width: 70%;
+  padding: 1% 1% 1% 1%;
   height: auto;
-  margin: 3% 25% 0% 25%;
-
-  border-width: 0px 1px 0px 1px;
+  margin: 1% 0% 0% 5%;
+  border-width: 0px 0px 0px 1px;
   border-style: solid;
+  /* background-color: bisque; */
 }
 
+#searcher {
+  width: 100%;
+  height: 30px;
+}
+
+#list-title {
+  margin:5% 3% 0% 6%;
+}
